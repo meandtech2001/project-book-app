@@ -1,0 +1,73 @@
+﻿
+.header {
+    background-color: #357ea3;
+    
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.content {
+    padding: 15px;
+}
+
+.book-info-content {
+    padding: 15px;
+    text-align: center;
+}
+
+img {
+    height: 100px;
+    width: 80px;
+}
+
+.book-info-img {
+    height: 500px;
+    width: 500px;
+}
+
+hr {
+    border: 1px solid #333;
+}
+
+th, td {
+    text-align: center;
+    border: 1px solid #333;
+    padding: 15px;
+}
+
+table {
+    border: 1px solid #333;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+form {
+    padding: 30px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #333;
+}
+
+.Action {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    padding:15px;
+}
