@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .author-box {
+            display: flex;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .author-image {
+            width: 100px;
+            height: 100px;
+            background-color: #f0f0f0;
+            background-size: cover;
+        }
+
+        .author-details {
+            padding: 10px;
+        }
+
+        .bio {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .books {
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            cursor: pointer;
+        }
+
+        .book-list {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+    <title>Author Details</title>
+</head>
+<body>
+  <div class="author-box" onclick="toggleDetails()">
+    <div class="author-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e8/Mahatma_Gandhi_photo.jpg');"></div>
+    <div class="author-details">
+      <h2>Mahatma Gandhi</h2>
+      <div class="bio">
+        <p>Mohandas Karamchand Gandhi, also known as Mahatma Gandhi, was born on October 2, 1869, in Porbandar, India. He was a lawyer, anti-colonial nationalist, and political ethicist who employed nonviolent resistance to lead the successful campaign for India's independence from British rule. He inspired movements for civil rights and freedom across the world.</p>
+      </div>
+      <div class="books" onclick="toggleBooks()">
+        Books Written by Mahatma Gandhi:
+      </div>
+      <div class="book-list">
+       <ol>
+      <li>
+        <h3>Hind Swaraj or Indian Home Rule (1909)</h3>
+        <div class="book-image">
+          <img src="https://cdn.kobo.com/book-images/4b968856-0742-49ef-8aec-7c2f2fbe5967/353/569/90/False/hind-swaraj-3.jpg" alt="Book 1 Image" width="100" height="150">
+        </div>
+      </li>
+      <li>
+        <h3>Key to Health (1948)</h3>
+        <div class="book-image">
+          <img src="https://m.media-amazon.com/images/I/41riEDUp6fL.jpg" alt="Book 2 Image" width="100" height="150">
+        </div>
+      </li>
+    </ol>
+      </div>
+    </div>
+  </div>
+
+
+<script>
+  
+  function toggleDetails() {
+    const bio = document.querySelector('.bio');
+    bio.style.display = bio.style.display === 'none' ? 'block' : 'none';
+  }
+
+  function toggleBooks() {
+    const bookList = document.querySelector('.book-list');
+    bookList.style.display = bookList.style.display === 'none' ? 'block' : 'none';
+  }
+</script>
+</body>
+</html>
