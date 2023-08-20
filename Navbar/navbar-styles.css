@@ -25,6 +25,9 @@ body, html {
     color: #f39c12;
 }
 
+.dropdown {
+    position: relative;
+}
 .dropdown-button {
     background: none;
     border: none;
