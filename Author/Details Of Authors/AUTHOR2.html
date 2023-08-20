@@ -3,46 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    padding: 20px;
-  }
-  .author-box {
-    display: flex;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    margin-bottom: 20px;
-  }
-  .author-image {
-    width: 100px;
-    height: 100px;
-    background-color: #f0f0f0;
-    background-size: cover;
-  }
-  .author-details {
-    padding: 10px;
-  }
-  .bio {
-    display: none;
-    margin-top: 10px;
-  }
-  .books {
-    border-top: 1px solid #ccc;
-    padding-top: 10px;
-    cursor: pointer;
-  }
-  .book-list {
-    display: none;
-    margin-top: 10px;
-  }
-</style>
+<link rel="stylesheet" href="authordetailsstyles.css">
+<link rel="stylesheet" href="../../NavBar/styles.css">
 <title>Author Details</title>
 </head>
 <body>
+  <iframe src="../../Navbar/navbar2.html" frameborder="0" scrolling="no"></iframe>
+
   <div class="author-box" onclick="toggleDetails()">
     <div class="author-image" style="background-image: url('https://m.media-amazon.com/images/I/41quXhdYjCL.jpg');"></div>
     <div class="author-details">

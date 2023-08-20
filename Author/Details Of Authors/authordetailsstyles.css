@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    display: block;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.author-box {
+    display: flex;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.author-image {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    background-size: cover;
+}
+
+.author-details {
+    padding: 10px;
+}
+
+.bio {
+    display: none;
+    margin-top: 10px;
+}
+
+.books {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.book-list {
+    display: none;
+    margin-top: 10px;
+}
