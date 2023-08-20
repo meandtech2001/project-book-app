@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     display: block;
     align-items: flex-start;
     justify-content: space-around;
@@ -10,12 +10,12 @@ body {
     display: flex;
     border: 1px solid #ccc;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin: 20px 20px;
 }
 
 .author-image {
-    width: 100px;
-    height: 100px;
+    width: 500px;
+    height: 250px;
     background-color: #f0f0f0;
     background-size: cover;
 }
@@ -25,7 +25,7 @@ body {
 }
 
 .bio {
-    display: none;
+    display: block  ;
     margin-top: 10px;
 }
 
@@ -36,6 +36,6 @@ body {
 }
 
 .book-list {
-    display: none;
+    display: flex;
     margin-top: 10px;
 }

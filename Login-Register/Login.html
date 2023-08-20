@@ -3,25 +3,12 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login Page</title>
-    <link rel="stylesheet" href="../NavBar/styles.css">
-
-    <script>
-        document.getElementById("loginbutton").addEventListener("click", function() {
-            var email = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
-
-            if(email==="teamb@ecolab.com" && password==="teamb123") {
-                window.location.href = "../Author/AuthorList.html";
-            } else {
-                alert("Wrong Email or Password");
-            }
-        })
-    </script>
+    <link rel="stylesheet" href="../NavBar/styles.css">    
 </head>
+
 <body>
     <iframe src="../Navbar/navbar1.html" frameborder="0" scrolling="no"></iframe>
 
-    
     <div class="container">
 
         <h2>Login</h2>
@@ -35,9 +22,40 @@
                 <input type="password" class="form-control" id="password" name="password" required>
             </div>
             <p> New Here! <a href="./Register.html">Register Now</a></p>
-            <button type="button" class="btn" id="loginbutton">Login</button>
+            <button type="submit" class="btn" id="loginbutton">Login</button>
         </form>
-
     </div>
+
+    <script>
+        document.getElementById("LoginForm").addEventListener("submit", function(event) {
+            var email = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            
+            var validEmail = "teamb";
+            var validPassword = "teamb";
+
+            console.log(email);
+            console.log(password);
+
+
+            /*if(email==validEmail.toString() && password==validPassword.toString()) {
+                window.location.href = "../Author/AuthorList.html";
+                
+            } else {
+                alert("Wrong Email or Password");
+            }*/
+
+            if(email != validEmail) {
+                alert("Wrong Email");
+            } else if(password != validPassword) {
+               alert("Wrong Password");
+            }
+            else {
+                window.location.href = "../Author/AuthorList.html";
+            }
+
+        })
+    </script>
+
 </body>
 </html>

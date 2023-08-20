@@ -1,67 +1,62 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
     <title>Author List</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css\styles.css">
-
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="../NavBar/styles.css">
 </head>
+
 <body>
     <iframe src="../Navbar/navbar2.html" frameborder="0" scrolling="no"></iframe>
 
-            <div class="header" >
-                <h1 class="floating">AUTHORS LIST</h1>
-            </div>
+    <div class="header">
+        <h1>AUTHORS LIST</h1>
+    </div>
+    <hr>
 
-            <hr>
-            <div class="content" id="test">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Photo</th>
-                            <th>Name</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><img src="https://pbs.twimg.com/media/FAqPzrrUYAM8pCu.jpg" width="80" height="60"></td>
-                            <td>Mohandas Karamchand Gandhi</td>
-
-                            <td>
-                                <div class="Action">
-                                    <a href=".\Details Of Authors\AUTHOR1.html">Details</a>
-                                    <a href="">Add to Favorite</a>
-                                    <a href="">Edit</a>
-                                </div>
-                            </td>
-
-                        </tr>
-
-                        <tr>
-                            <td><img src="https://pbs.twimg.com/profile_images/1269658848777785345/2bY35KV0_400x400.jpg" width="80" height="60"></td>
-                            <td>Ramdhari Singh Dinkar</td>
-
-                            <td>
-                                <div class="Action">
-                                    <a href=".\Details Of Authors\AUTHOR2.html">Details</a>
-                                    <a href="">Add to Favorite</a>
-                                    <a href="">Edit</a>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <br />
-                <button class="btn" onclick="window.location.href = 'AddAuthor.html';" >Add Author</button>
-
-            </div>
-
-
+    <div class="content" id="test">
+        <table>
+            <thead>
+                <tr>
+                    <th>Photo</th>
+                    <th>Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://pbs.twimg.com/media/FAqPzrrUYAM8pCu.jpg"></td>
+                    <td>Mohandas Karamchand Gandhi</td>
+                    <td>
+                        <div class="action">
+                            <a href="./AuthorDetails/Author1.html">Details</a>
+                            <a href="">Add to Favorites</a>
+                            <a href="">Edit</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="https://pbs.twimg.com/profile_images/1269658848777785345/2bY35KV0_400x400.jpg"></td>
+                    <td>Ramdhari Singh Dinkar</td>
+                    <td>
+                        <div class="action">
+                            <a href="./AuthorDetails/Author2.html">Details</a>
+                            <a href="">Add to Favorites</a>
+                            <a href="">Edit</a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <br/>
+        <button class="btn" onclick="window.location.href = 'AddAuthor.html';">Add Author</button>
+    </div>
 </body>
 </html>
