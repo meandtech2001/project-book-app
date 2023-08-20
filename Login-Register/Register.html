@@ -3,31 +3,23 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Register Page</title>
+    <link rel="stylesheet" href="../Author/css/styles.css">
+
     <link rel="stylesheet" href="../NavBar/styles.css">
 </head>
 <body>
     <iframe src="../Navbar/navbar1.html" frameborder="0" scrolling="no"></iframe>
-    <div class="container">
-        <h2>Register</h2>
-        <form>
-
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" class="form-control" id="username" name="username" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password" name="password" required>
-            </div>
-            <p>Already have an account? <a href="./Login.html">Login here</a></p>
-
+    
+    <div class="content" id="test">
+        <h1 style="color: rgb(62, 188, 234);">Registration Form</h1>
+        <form id="RegisterForm">            
+            <input type="text" id="username" name="username" placeholder="Username" required/>
+            <input type="email" id="email" name="email" placeholder="Email" required/>
+            <input type="password" id="password" name="password" placeholder="Password" required/>
+            <br>
+            <br>
             <button type="submit" class="btn">Register</button>
+            <p>Already have an account? <a href="./Login.html">Login here</a></p>
         </form>
     </div>
 </body>

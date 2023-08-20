@@ -3,26 +3,22 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login Page</title>
+    <link rel="stylesheet" href="../Author/css/styles.css">
     <link rel="stylesheet" href="../NavBar/styles.css">    
 </head>
 
 <body>
     <iframe src="../Navbar/navbar1.html" frameborder="0" scrolling="no"></iframe>
 
-    <div class="container">
-
-        <h2>Login</h2>
+    <div class="content" id="test">
+        <h1 style="color: rgb(62, 188, 234);">Login</h1>
         <form id="LoginForm">
-            <div class="form-group">
-                <label for="username">Email</label>
-                <input type="text" class="form-control" id="username" name="username" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password" name="password" required>
-            </div>
-            <p> New Here! <a href="./Register.html">Register Now</a></p>
-            <button type="submit" class="btn" id="loginbutton">Login</button>
+            <input type="text" id="username" name="username" placeholder="Email" required/>
+            <input type="password" id="password" name="password" placeholder="Password" required/>
+            <br>
+            <br>
+            <input class="btn" type="submit" value="Login" />
+            <p> New Here? <a href="./Register.html">Register Now</a></p>
         </form>
     </div>
 
