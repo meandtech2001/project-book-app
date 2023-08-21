@@ -11,7 +11,7 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 22px;
 }
 .navbar-title {
     font-size: x-large;
@@ -43,7 +43,7 @@ body, html {
 }
 .dropdown-content a {
     color: #fff;
-    padding: 10px;
+    padding: 3px;
     text-decoration: none;
     display: block;
 }
