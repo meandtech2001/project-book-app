@@ -5,6 +5,7 @@
     <title>Login Page</title>
     <link rel="stylesheet" href="../Author/css/styles.css">
     <link rel="stylesheet" href="../NavBar/styles.css">    
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -17,30 +18,9 @@
             <input type="password" id="password" name="password" placeholder="Password" required/>
             <br>
             <br>
-            <input class="btn" type="submit" value="Login" />
+            <input class="btn" type="submit" value="Login" onclick="authenticate()" />
             <p> New Here? <a href="./Register.html">Register Now</a></p>
         </form>
     </div>
-
-    <script>
-        document.getElementById("LoginForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            var email = document.getElementById("email").value;
-            var password = document.getElementById("password").value;
-            
-            var validEmail = "teamb@ecolab.com";
-            var validPassword = "teamb";            
-
-            if(email != validEmail) {
-                alert("Wrong Email");
-            } else if(password != validPassword) {
-               alert("Wrong Password");
-            }
-            else {
-                window.location.href = "../Author/AuthorList.html";
-            }
-        })
-    </script>
-
 </body>
 </html>
